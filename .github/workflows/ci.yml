@@ -21,8 +21,7 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
-          - NITRO_PRESET: github_pages
-          - NITRO_APP_BASE_URL: nuxt-tests
+          NITRO_PRESET: github_pages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
