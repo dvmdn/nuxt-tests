@@ -1,5 +1,7 @@
 <script setup lang="ts">
+
 const online = useOnline()
+const device = useDevice()
 </script>
 
 <template>
@@ -19,5 +21,6 @@ const online = useOnline()
       </template>
     </Suspense>
     <InputEntry />
+    <pre>{{device}}</pre>
   </div>
 </template>
