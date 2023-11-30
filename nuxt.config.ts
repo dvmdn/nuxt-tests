@@ -2,6 +2,10 @@ import { pwa } from './config/pwa'
 import { appDescription } from './constants/index'
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    // The private keys which are only available within server-side
+    nitro_preset: 'node-server',
+  },
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',

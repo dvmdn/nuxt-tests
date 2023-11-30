@@ -1,3 +1,5 @@
+const runtimeConfig = useRuntimeConfig()
+
 export default defineNitroConfig({
-    preset: 'aws-amplify'
+    preset: runtimeConfig.nitro_preset
 })
